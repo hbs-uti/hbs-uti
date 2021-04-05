@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(0, 195, 247);
+    background: linear-gradient(131.03deg, #00DBBB 2.54%, #00CEF7 77.08%);
+}
+
+#admissao {
+    font: 16pt;
+    text-align: justify;
+    padding: 15pt;
+    
+}
+
+#evolucao {
+    font: 16pt;
+    text-align: justify;
+    padding: 15pt;
+}

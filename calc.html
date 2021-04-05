@@ -1,0 +1,82 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scripts/style.css">
+    <title> Soluções padronizadas </title>
+</head>
+<body>
+    <header>
+        Calculadora de soluções e medicamentos mais utilizados em UTI
+    </header>
+
+    <div class="formPeso">
+            <p>Peso (kg) <input type="number" name="peso" id="peso" placeholder="peso real em kg" min="30" max="250"></p>
+    </div>
+
+    <section class="solsedo">
+        <h2>
+            Digite a vazão das soluções em mL/h
+        </h2>
+        <div class="formFenta">
+            <p>Fentanil <input type="number" name="mlFenta" id="mlFenta" min="0" max="100" onclick="calcFenta()"></p>
+            <p>Ampola padrão 10 mL - concentração 50 mcg/mL <br>
+                Diluição: fentanil 20 mL + SF0,9% 30 mL <br>
+                Dose: 0,7 - 1,0 mcg/kg/h
+            </p>
+            <p id="resFenta">
+                Fentanil = 
+            </p>
+                        
+        </div>
+        <hr>
+        <div class="formMida">
+            Midazolam <input type="number" name="mlMida" id="mlMida" min="0" max="100">
+            <p>Ampola padrão 10 mL - concentração 5 mg/mL <br>
+                Diluição: midazolam 20 mL + SF0,9% 30 mL <br>
+                Dose: 0,02 - 0,10 mg/kg/h
+            </p>
+
+            <p id="resMida">
+                Midazolam = 
+            </p>
+
+        </div>
+        <hr>
+        <div class="formPropo">
+            Propofol <input type="number" name="mlPropo" id="mlPropo" min="0" max="100">
+            <p>Ampola padrão 20 mL - concentração 10 mg/mL <br>
+                Diluição: propofol 50 mL puro <br>
+                Dose: 0,3 - 3,0 mg/kg/h
+            </p>
+
+            <p id="resPropo">
+                Propofol = 
+            </p>
+        </div>
+
+    </section>
+
+    <section class="solevol">
+        <h2>Copiar e colar as linhas abaixo na evolução: </h2>
+        
+        <p>Fentanil __ mL/h = __ mcg/kg/h <br>
+            Midazolam __mL/h= __ mg/kg/h <br>
+            Propofol __mL/h= __ mg/kg/h </p>
+
+    </section>
+
+    <section class="solmax">
+        <h2>Dose máxima sugerida</h2>
+        <p>Fentanil mL/h <br>
+            Midazolam mL/h <br>
+            Propofol mL/h </p>
+    </section>
+
+    <script src="calcsol.js"></script>
+
+    <footer> <i>&copy;ts.ken</i> </footer>
+
+</body>
+</html>

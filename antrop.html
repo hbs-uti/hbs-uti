@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dados antropométricos </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <p> Antropometria </p>
+    </header>
+
+    <section id="dados">
+        <div>
+            <p>Digite os dados a seguir:</p>
+            <p>Altura: <input type="number" name="altura" id="altura" min="120" max="250"> cm </p>
+            <p>Peso: <input type="number" name="peso" id="peso" min="10" max="300"> Kg </p>
+            <p>Sexo: <input type="radio" name="masc" value="masc" checked="checked"> <label for="masc"> Masculino </label> <input type="radio" name="femin" value="femin"> <label for="femin">Feminino</label> </p>
+
+            <input type="button" value="Calcular" onclick="calcular()">
+        </div>
+
+        <div id="res">
+            <p id="vmpeso"> Peso ideal para VM: </p>
+            <p id="vmvol"> Volume corrente (4 - 6 mL/kg): </p>
+
+        </div>
+
+
+
+
+    </section>
+
+        
+    
+
+    <script src="scripts/script_antrop.js"></script>
+</body>
+</html>

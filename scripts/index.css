@@ -1,0 +1,45 @@
+         body {
+            font: Calibri;
+            background-color: rgb(0, 195, 247);
+            background: linear-gradient(131.03deg, #00DBBB 2.54%, #00CEF7 77.08%);
+        }
+        
+        header {
+            font: 16pt;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: underline;
+            padding: 10pt 10pt;
+        }
+
+        section {
+            padding: 20px 20px;
+        }
+
+        #but_antrop {
+            background-color: rgb(255, 255, 255);
+            font: 14pt;
+            padding: 10pt 10pt;
+            box-shadow: 2px 2px 2px rgb(80, 79, 79);
+        }
+
+        #but_calc {
+            background-color: rgb(255, 255, 255);
+            font: 14pt;
+            padding: 10pt 10pt;
+            box-shadow: 2px 2px 2px rgb(80, 79, 79);
+        }
+        
+        #but_link {
+            background-color: rgb(255, 255, 255);
+            font: 14pt;
+            padding: 10pt 10pt;
+            box-shadow: 2px 2px 2px rgb(80, 79, 79);
+        }
+
+        #but_rotinas {
+            background-color: rgb(255, 255, 255);
+            font: 14pt;
+            padding: 10pt 10pt;
+            box-shadow: 2px 2px 2px rgb(80, 79, 79);
+        }

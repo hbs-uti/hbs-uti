@@ -1,0 +1,63 @@
+body {
+    background-color: rgb(35, 185, 231);
+    font: 10pt Verdana;
+
+}
+
+header {
+    color: white;
+    text-align: center;
+    font: 18pt Verdana;
+
+}
+div.formPeso {
+    text-align: center;
+    padding: 10px 10px 10px;
+
+}
+
+
+h2 {
+    color: rgb(34, 72, 177);
+    font: 14pt Verdana;
+    text-decoration-line: underline;    
+}
+
+section.solsedo {
+    background-color: rgb(107, 224, 156);
+    font: 10pt Verdana;
+    padding: 12px 12px 12px;
+    border-radius: 10px;
+    width: 500px;
+    margin: 15px;
+    box-shadow: 3px 3px 10px;
+}
+
+section.solevol {
+    background-color: white;
+    border-radius: 12px;
+    padding: 12px 12px 12px;
+    width: 500px;
+    margin: 15px;
+    box-shadow: 3px 3px 10px;
+
+}
+
+section.solmax {
+
+    background-color: aqua;
+    border-radius: 10px;
+    padding: 12px 12px 12px;
+    width: 500px;
+    margin: 15px;
+    box-shadow: 3px 3px 10px;
+
+
+}
+
+footer {
+    font: 12pt;
+    padding: 10px 10px 10px;
+    text-align: center;
+    
+}
