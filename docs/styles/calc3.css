@@ -1,0 +1,57 @@
+section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 10;
+    margin: 10;
+}
+
+.head-top {
+    border-style: dotted;
+    background-color: rgb(173, 171, 171);
+    flex: 1 100%;
+}
+
+#button-top {
+    background-color: beige;
+    margin: 10px;
+    
+}
+
+.head-container {
+    border-style: dashed;
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    background-color: gray;
+    justify-content: space-around;
+    flex: 1 100%;
+}
+
+ul.fenta {
+    border-style: dashed;
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    background-color:white;
+    justify-content: space-around;
+    flex: 1 100%;
+    }
+
+div.mida {
+    border-style: dashed;
+    display: flex;
+    flex-flow: row wrap;
+    background-color:white;
+    justify-content: space-around;
+    flex: 1 100%;
+}
+
+div.propo {
+    border-style: dashed;
+    background-color: aliceblue;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    flex: 1 100%;
+}

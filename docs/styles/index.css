@@ -1,0 +1,62 @@
+         body {
+            font: 12pt Verdana;
+            background-color: rgb(29, 110, 202);
+            background: linear-gradient(131.03deg, rgb(29, 110, 202) 2.54%, #7be9ff 77.08%);
+        }
+        
+        header {
+            color: white;
+            font-size: 16pt;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: underline;
+            padding: 10pt 10pt;
+        }
+
+        .text-hosp {
+            background-color: aliceblue;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            border-radius: 8pt;
+            padding: 10pt 10pt;
+            align-items: center;
+            box-shadow: 2px 2px 2px rgb(80, 79, 79);
+            
+        }
+
+        .select-hosp {
+            background-color: aliceblue;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            border-radius: 8pt;
+            padding: 5pt 5pt;
+            margin-left: 8pt;
+
+        }
+
+        section {
+            padding: 20px 20px;
+            display: flex;
+            flex-flow: column wrap;
+        }
+
+        section > button {
+            
+            background-color: rgb(255, 255, 255);
+            font-size: 12pt;
+            font-weight: bold;
+            padding: 10pt 10pt;
+            margin: 8px;
+            border: 8px;
+            box-shadow: 2px 2px 2px rgb(80, 79, 79);
+            justify-content: space-around;
+        
+        }
+
+        button:hover {
+            background-color: rgb(218, 218, 218);
+        }
+
+    

@@ -4,34 +4,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Dados antropométricos </title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style_antrop.css">
 </head>
+
+<!--
+    - Página simples com campos para digitar peso e altura, para obter dados como peso dose, peso ideal, IMC, peso predito (para VM), volume corrente 4 a 6 mL/kg.
+    - Output pode sers em flexbox, pronto para copiar e colar na evolução.
+-->
+
 <body>
     <header>
         <p> Antropometria </p>
     </header>
 
     <section id="dados">
-        <div>
-            <p>Digite os dados a seguir:</p>
-            <p>Altura: <input type="number" name="altura" id="altura" min="120" max="250"> cm </p>
-            <p>Peso: <input type="number" name="peso" id="peso" min="10" max="300"> Kg </p>
-            <p>Sexo: <input type="radio" name="masc" value="masc" checked="checked"> <label for="masc"> Masculino </label> <input type="radio" name="femin" value="femin"> <label for="femin">Feminino</label> </p>
-
-            <input type="button" value="Calcular" onclick="calcular()">
+        
+        <p id="p1">Digite os dados a seguir:</p>
+        
+        <div id="altura">
+            <p>Altura: <input type="number" id="box-altura" min="120" max="250"> cm </p>
         </div>
 
-        <div id="res">
-            <p id="vmpeso"> Peso ideal para VM: </p>
-            <p id="vmvol"> Volume corrente (4 - 6 mL/kg): </p>
-
+        <div id="peso"> 
+            <p>Peso: <input type="number" id="box-peso" min="30" max="300"> Kg </p>
         </div>
-
-
-
-
+        
+        <div id="sexo">
+            <p>Sexo: 
+                <input type="radio" id="femin"name="sex" value="femin" checked> <label for="femin">Feminino</label>
+                
+                <input type="radio" id="masc" name="sex" value="masc"> <label for="masc"> Masculino </label> </p>
+        
+        </div>
+        
+        <input type="button" value="Calcular" id="btnCalc" onclick="calcular()">
+    
     </section>
 
+    <section id="box-evol">
+        <p id="evolp1">Copie e cole os dados abaixo na sua evolução:<input type="button" value="Copiar" name="copiar" id="btncopy"></p>
+
+        <p id="evolp2">Peso real: kg || Altura: cm || Peso ideal para VM: kg || Volume corrente (4 - 6 mL/kg): mL </p>
+                
+    </section>
         
     
 

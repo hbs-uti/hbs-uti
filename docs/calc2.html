@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/table.css">
+    <title> Soluções padronizadas </title>
+</head>
+
+<!-- a ideia é um utilitário que gere um texto no site e o usuário possa copiar e colar em seu sistema de prontuário (não importa qual)-->
+
+<body>
+    <header>
+        Calculadora de soluções e medicamentos mais utilizados em UTI
+    </header>
+
+<table id="solucoes">
+    <thead>
+        <tr>
+            <th>Peso: __ kg </th>
+            <th>Vazão mL/h</th>
+            <th>Concentração</th>
+            <th>Detalhes</th>
+        </tr>
+    </thead>
+    
+    <tbody>
+        <tr>
+            <th>Fentanil </th>
+            <th class="vazao"> <input type="number" class="vazaoMed" name="vazaoMed" minlength="0" maxlength="100"></th>
+            <td>20 mcg/mL</td>
+            <td class="detalhes">Ampola padrão 10mL - concentração 50 mcg/mL <br> Fentanil 20 mL + SF0,9% 30 mL </td>
+            
+        </tr>
+
+        <tr>
+            <th>Midazolam </th>
+            
+            <th class="vazao"><input type="number" class="vazaoMed" name="vazaoMed" minlength="0" maxlength="100"></th>
+            <td>2 mg/mL</td>
+            <td class="detalhes">Ampola padrão 10mL - concentração 5 mg/mL <br> Midazolam 20 mL + SF0,9% 30 mL</td>
+        </tr>
+
+        <tr>
+            <th>Propofol </th>
+            <th class="vazao"><input type="number" class="vazaoMed" name="vazaoMed" minlength="0" maxlength="100"></th>
+            <td>10 mg/mL</td>
+            <td class="detalhes">Ampola padrão 20mL - concentração 10 mg/mL <br> Sem diluição</td>
+        </tr>
+
+        <tr>
+            <th>Noradrenalina </th>
+            <th class="vazao"><input type="number" class="vazaoMed" name="vazaoMed" minlength="0" maxlength="100"></th>
+            <td>80 mcg/mL</td>
+            <td class="detalhes">Ampola padrão 4mL - concentração 1 mg/mL <br> Noradrenalina 8mL + SF0,9% 92mL</td>
+        </tr>
+
+    </tbody>
+</table>
+
+<div id="resultados">
+    <p>Copie e cole o texto abaixo na evolução:</p>
+    <p id="result"> ... <br> ... <br> ... </p>
+</div>
+
+
+<div id="dosemax">
+    <p>---</p>
+</div>
+
+<!--Aqui entram os resultados dados por JS. O formato virá padrão para escrever na evolução clínica.-->
+
+<script src="scripts/script_table.js"></script>
+
+</body>
+</html>

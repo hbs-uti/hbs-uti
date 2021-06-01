@@ -1,6 +1,6 @@
 body {
     background-color: rgb(35, 185, 231);
-    font: 10pt Verdana;
+    font: 11pt Verdana;
 
 }
 
@@ -8,19 +8,28 @@ header {
     color: white;
     text-align: center;
     font: 18pt Verdana;
+    text-decoration: underline;
 
 }
+
+
+
 div.formPeso {
     text-align: center;
     padding: 10px 10px 10px;
 
 }
 
+p.diluicao {
+    color: antiquewhite;
+    text-align: right;
+}
 
 h2 {
     color: rgb(34, 72, 177);
     font: 14pt Verdana;
     text-decoration-line: underline;    
+    
 }
 
 section.solsedo {
@@ -55,9 +64,27 @@ section.solmax {
 
 }
 
+section#box-evol {
+    background-color: aliceblue;
+    padding: 10px 10px 10px;
+    justify-content: center;
+    border-radius: 8px;
+
+}
+
 footer {
     font: 12pt;
     padding: 10px 10px 10px;
     text-align: center;
+    
+}
+
+p#evolp1 {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+p#evolp2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     
 }

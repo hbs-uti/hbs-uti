@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scripts/style.css">
+    <link rel="stylesheet" href="scripts/calc3.css">
+    <title> Soluções padronizadas </title>
+</head>
+
+<!-- a ideia é um utilitário que gere um texto no site e o usuário possa copiar e colar em seu sistema de prontuário (não importa qual)-->
+
+<body>
+    <header>
+        Calculadora de soluções e medicamentos mais utilizados em UTI
+    </header>
+
+    <section>
+        
+        <div class="head-top">
+            <p>Peso</p>
+            <button id="button-top">Limpar</button>
+        </div>
+
+        <ul class="head-container">
+            <li class="head-item">Medicamento </li>
+            <li class="head-item">Vazão mL/h </li>
+            <li class="head-item">Concentração</li>
+            <li class="head-item">Detalhes</li>
+        </ul>
+        
+        <ul class="fenta">
+            <li>Fentanil </li>
+            <li><input type="number" name="ml-fenta" id="ml-fenta"></li>
+            <li>20 mcg/mL </li>
+            <li>Ampola padrão 10 mL (50 mcg/mL) <br>
+                Diluição: fentanil 20 mL + SF0,9% 30 mL</li>
+        </ul>    
+            
+        <div class="mida">
+            <p>Midazolam </p>
+            <p><input type="number" name="ml-mida" id="ml-mida"></p>
+            <p>2 mg/mL </p>
+            <p>Ampola padrão 10 mL (5 mg/mL) <br>
+                Diluição: midazolam 20 mL + SF0,9% 30 mL </p>
+        </div>    
+            
+        <div class="propo">
+            <p>Propofol </p>
+            <p><input type="number" name="ml-propo" id="ml-propo"></p>
+            <p>10 mg/mL</p>
+            <p>Ampola padrão 20 mL (2,5 mg/mL) <br>
+                Diluição: solução pura</p>
+        </div>
+
+     
+    </section>
+
+
+<!--Aqui entram os resultados dados por JS. O formato virá padrão para escrever na evolução clínica.-->
+
+<script src="scripts/script_table.js"></script>
+
+</body>
+</html>

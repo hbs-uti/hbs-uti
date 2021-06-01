@@ -1,0 +1,79 @@
+body {
+    font: 11pt Verdana;
+    background-color: rgb(29, 110, 202);
+    background: linear-gradient(131.03deg, rgb(29, 110, 202) 2.54%, #7be9ff 77.08%);
+}
+
+header {
+    color: white;
+    font: 18pt Verdana;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+    padding: 8px;
+}
+
+p#p1 {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+section#dados {
+    background-color: aliceblue;
+    padding: 10px 16px 10px;
+    justify-content: center;
+    border-radius: 8px;
+    margin: 10px;
+    width: fit-content;
+}
+
+input#box-altura {
+    max-width: 100px;
+    border-style: dashed;
+}
+
+input#box-peso {
+    max-width: 100px;
+    border-style: dashed;
+}
+
+input#btnCalc {
+    max-width: 100px;
+    padding: 8px 8px;
+    border-radius: 3px;
+    box-shadow: 2px;
+}
+
+input#btncopy {
+    max-width: 100px;
+    padding: 8px 8px;
+    border-radius: 3px;
+    box-shadow: 2px;
+    margin-left: 12px;
+}
+
+section#box-evol {
+    background-color: aliceblue;
+    padding: 10px 16px 10px;
+    justify-content: center;
+    border-radius: 8px;
+    margin: 10px;
+    max-width: fit-content;
+}
+
+footer {
+    font: 12pt;
+    padding: 10px 10px 10px;
+    text-align: center;
+    
+}
+
+p#evolp1 {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+p#evolp2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}

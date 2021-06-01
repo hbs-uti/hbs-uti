@@ -1,0 +1,33 @@
+body {
+    font: 11pt Verdana;
+    background-color: rgb(29, 110, 202);
+    background: linear-gradient(131.03deg, rgb(29, 110, 202) 2.54%, #7be9ff 77.08%);
+}
+
+header {
+    color: white;
+    font: 18pt Verdana;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+    padding: 8px;
+}
+
+div.formPeso {
+    display: flexbox;
+    flex-direction: row;
+    background-color: aliceblue;
+    padding: 10px 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    
+}
+
+div.solform {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    
+}
+

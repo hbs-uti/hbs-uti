@@ -4,25 +4,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Página principal </title>
-    <link rel="stylesheet" href="scripts/index.css">
+    <link rel="stylesheet" href="styles/index.css">
 
     
 </head>
+
+<!--
+    - Index deve conter uma interface simples e intuitiva.
+    - Futuramente pode ser utilizado um login de acesso e o selecionar o hospital, para verificar quais protocolos, soluções e medicamentos utilizar.
+-->
+
 <body>
     <header>
         UTI HBS
     </header>
 
+    <div>
+        <p class="text-hosp"> Selecione seu hospital:
+            <select name="select-hosp" class="select-hosp">
+                    <option value="HBS"> Hospital Baía Sul </option>
+                    <option value="HGCR"> Hospital Governador Celso Ramos </option>
+                    <option value="HNR">Hospital Nereu Ramos </option>
+                    <option value="HU"> Hospital Universitário - UFSC </option>
+            </select>
+        </p>
+    </div>
+
     <section>
-        
-        <button id="but_antrop"> <a href="antrop.html">Dados antropométricos</a> </button>
-        <button id="but_calc"> <a href="calc.html">Calculadoras</a> </button>
-        <button id="but_link"> <a href="links.html">Links</a> </button>
-        <button id="but_rotinas"> <a href="rotinas.html">Rotinas e atribuições na UTI</a> </button>
+        <button id="but_calc"> <a href="calc2.html" target="_blank">Calculadoras </a> </button>
+        <button id="but_antrop"> <a href="antrop.html" target="_blank">Dados antropométricos </a> </button>
+        <button id="but_link"> <a href="links.html" target="_blank">Links úteis </a> </button>
+        <button id="but_protocolos"> <a href="protocolos.html" target="_blank">Protocolos </a> </button>
+        <button id="but_ramais"> <a href="ramais.html" target="_blank">Ramais telefônicos </a> </button>
+        <button id="but_rotinas"> <a href="rotinas.html" target="_blank">Rotinas na UTI </a> </button>
 
     </section>
 
-    <footer>&copy;t-ken</footer>
 
 </body>
 </html>

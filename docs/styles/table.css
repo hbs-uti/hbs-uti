@@ -1,0 +1,60 @@
+table#solucoes {
+    background-color: rgb(228, 228, 228);
+    text-align: justify;
+    width: auto;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
+    border-spacing: 5px;
+
+}
+
+thead {
+    text-transform: uppercase;
+
+
+}
+
+
+th {
+    text-align: center;
+    padding: 5px;   
+
+}
+
+.detalhes {
+    text-align: justify;
+    font-size: 8pt;
+
+}
+
+.vazao {
+    padding: 10px;
+    empty-cells: show;
+    text-align: center;
+    text-emphasis-color: blue;
+    border-radius: 5px;
+        
+}
+
+.vazaoMed {
+    border: none;
+    width: 60px;
+    height: 30px;
+}
+
+div#resultados {
+    background-color: bisque;
+    width: auto;
+    text-align: justify;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
+    border-spacing: 5px;
+
+}
+
+div#dosemax {
+    background-color: aqua;
+    
+}
