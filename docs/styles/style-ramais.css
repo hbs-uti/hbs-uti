@@ -36,7 +36,7 @@ h2 {
 }
 
 .item {
-    padding: 1.8px;    
+    padding: 2.5px;    
     }
 
 ul {
@@ -51,4 +51,11 @@ li:hover {
     background-color: aliceblue;
 }
 
+.a-return {
+    background-color: aliceblue;
+    padding: 10px 10px;
+    border-radius: 8px;
+    width: fit-content;
+    
+}
 

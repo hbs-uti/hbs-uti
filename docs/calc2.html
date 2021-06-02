@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/table.css">
     <title> Soluções padronizadas </title>
 </head>
@@ -17,52 +16,46 @@
     </header>
 
 <table id="solucoes">
+    <p>Peso: <input type="number" name="form-peso" id="form-peso"> kg</p>
     <thead>
         <tr>
-            <th>Peso: __ kg </th>
-            <th>Vazão mL/h</th>
-            <th>Concentração</th>
-            <th>Detalhes</th>
+            <th> </th>
+            <th> Vazão mL/h </th>
+            <th> Concentração </th>
+            <th> Diluição </th>
         </tr>
     </thead>
     
     <tbody>
         <tr>
-            <th>Fentanil </th>
-            <th class="vazao"> <input type="number" class="vazaoMed" name="vazaoMed" minlength="0" maxlength="100"></th>
-            <td>20 mcg/mL</td>
-            <td class="detalhes">Ampola padrão 10mL - concentração 50 mcg/mL <br> Fentanil 20 mL + SF0,9% 30 mL </td>
+            <th> Fentanil </th>
+            <th class="vazao"> <input type="number" class="vazaoMed" name="vazaoMed" minlength="0" maxlength="100" id="vazao-fenta" onchange="calcFenta()"></th>
+            <td> 20 mcg/mL </td>
+            <td class="detalhes"> Ampola 10mL (50 mcg/mL)<br> Fentanil 20 mL + SF0,9% 30 mL </td>
             
         </tr>
 
         <tr>
-            <th>Midazolam </th>
-            
-            <th class="vazao"><input type="number" class="vazaoMed" name="vazaoMed" minlength="0" maxlength="100"></th>
-            <td>2 mg/mL</td>
-            <td class="detalhes">Ampola padrão 10mL - concentração 5 mg/mL <br> Midazolam 20 mL + SF0,9% 30 mL</td>
+            <th> Midazolam </th>
+            <th class="vazao"><input type="number" class="vazaoMed" name="vazaoMed" minlength="0" maxlength="100" id="vazao-mida" onchange="calcMida()"></th>
+            <td> 2 mg/mL </td>
+            <td class="detalhes"> Ampola  10mL (5 mg/mL)<br> Midazolam 20 mL + SF0,9% 30 mL</td>
         </tr>
 
         <tr>
-            <th>Propofol </th>
-            <th class="vazao"><input type="number" class="vazaoMed" name="vazaoMed" minlength="0" maxlength="100"></th>
-            <td>10 mg/mL</td>
-            <td class="detalhes">Ampola padrão 20mL - concentração 10 mg/mL <br> Sem diluição</td>
-        </tr>
-
-        <tr>
-            <th>Noradrenalina </th>
-            <th class="vazao"><input type="number" class="vazaoMed" name="vazaoMed" minlength="0" maxlength="100"></th>
-            <td>80 mcg/mL</td>
-            <td class="detalhes">Ampola padrão 4mL - concentração 1 mg/mL <br> Noradrenalina 8mL + SF0,9% 92mL</td>
+            <th> Propofol </th>
+            <th class="vazao"><input type="number" class="vazaoMed" name="vazaoMed" minlength="0" maxlength="100" id="vazao-propo" onchange="calcPropo()"></th>
+            <td> 10 mg/mL </td>
+            <td class="detalhes"> Ampola 20mL (10 mg/mL)<br> Sem diluição</td>
         </tr>
 
     </tbody>
 </table>
 
 <div id="resultados">
-    <p>Copie e cole o texto abaixo na evolução:</p>
-    <p id="result"> ... <br> ... <br> ... </p>
+    <p>Copie e cole o texto abaixo na evolução: <input type="button" value="Copiar" id="btn-copiar"> </p>
+    <p> Fentanil <span id="resFenta"></span> mcg/kg/h <br> Midazolam <span id="resMida"></span> mg/kg/h <br> Propofol <span id="resPropo"></span> mg/kg/h</p>
+    
 </div>
 
 

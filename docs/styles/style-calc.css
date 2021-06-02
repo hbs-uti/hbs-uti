@@ -6,7 +6,7 @@ body {
 
 header {
     color: white;
-    font: 18pt Verdana;
+    font: 16pt Verdana;
     font-weight: bold;
     text-align: center;
     text-decoration: underline;
@@ -15,7 +15,7 @@ header {
 
 div.formPeso {
     display: flexbox;
-    flex-direction: row;
+    flex-direction: row wrap;
     background-color: aliceblue;
     padding: 10px 10px;
     border-radius: 8px;
