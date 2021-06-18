@@ -49,12 +49,22 @@
             <td class="detalhes"> Ampola 20mL (10 mg/mL)<br> Sem diluição</td>
         </tr>
 
+        <tr>
+            <th> Noradrenalina </th>
+            <th class="vazao"><input type="number" class="vazaoMed" name="vazaoMed" minlength="0" maxlength="100" id="vazao-nora" onchange="calcNora()"></th>
+            <td> 80 mg/mL </td>
+            <td class="detalhes"> Ampola 4mL (1 mg/mL)<br> Noradrenalina 8 mL + SF0,9% 92mL</td>
+        </tr>
+
     </tbody>
 </table>
 
 <div id="resultados">
     <p>Copie e cole o texto abaixo na evolução: <input type="button" value="Copiar" id="btn-copiar"> </p>
-    <p id="p-res"> Fentanil <span id="resFenta"></span> mcg/kg/h <br> Midazolam <span id="resMida"></span> mg/kg/h <br> Propofol <span id="resPropo"></span> mg/kg/h</p>
+    <p id="p-res"> 
+        Fentanil <span id="resFenta"></span> mcg/kg/h <br> Midazolam <span id="resMida"></span> mg/kg/h <br> Propofol <span id="resPropo"></span> mg/kg/h <br>
+        Noradrenalina <span id="resNora"></span> mcg/kg/min
+    </p>
     
 </div>
 

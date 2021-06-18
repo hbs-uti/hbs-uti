@@ -2,6 +2,7 @@ var formPeso = document.getElementById("form-peso");
 var vazaoFenta = document.getElementById("vazao-fenta");
 var vazaoMida = document.getElementById("vazao-mida");
 var vazaoPropo = document.getElementById("vazao-propo");
+var vazaoNora = document.getElementById("vazao-nora");
 
 function calcFenta() {
     var peso = Number(formPeso.value);    
@@ -23,6 +24,13 @@ function calcPropo() {
     var propo = Number(vazaoPropo.value);
     var dosePropo = (propo*10)/peso;
     this.resPropo.innerHTML = dosePropo.toFixed(2);
+}
+
+function calcNora() {
+    var peso = Number(formPeso.value);    
+    var nora = Number(vazaoNora.value);
+    var doseNora = (nora*10)/peso/60;
+    this.resNora.innerHTML = doseNora.toFixed(2);
 }
 
 function copiar() {
