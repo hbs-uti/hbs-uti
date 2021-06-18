@@ -2,14 +2,17 @@ body {
     font: 12pt Verdana;
     background-color: rgb(29, 110, 202);
     background: linear-gradient(131.03deg, rgb(29, 110, 202) 2.54%, #7be9ff 77.08%);
+    text-align: left;
+    align-items: center;
 }
 
 h1 {
-    text-decoration: underline;
-    color: white;
     font: 16pt Verdana;
-    font-weight: bold;
+    text-decoration: underline;
     text-align: center;
+    color: white;
+    padding: 8px;
+    font-weight: bold;
 
 }
 
@@ -20,19 +23,42 @@ h2 {
 }
 
 #ramaishbs {
-    background-color: rgb(167, 245, 180);
-    padding: 8px;
-   
+    background-color: rgb(255, 255, 255);
+    padding: 10px 10px;
+    margin: 8px;
+    border: 8px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px rgb(80, 79, 79);
+    font: 11pt Verdana;
+
+    max-width: 800px;
+    min-width: 600px; 
 }
 
 #ramaisimagem {
-    background-color: rgb(176, 255, 255);
-    padding: 8px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 10px;
+    margin: 8px;
+    border: 8px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px rgb(80, 79, 79);
+    font: 11pt Verdana;
+
+    max-width: 800px;
+    min-width: 600px;
 }
 
 #ramaisoutros {
-    background-color: azure;
-    padding: 8px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 10px;
+    margin: 8px;
+    border: 8px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px rgb(80, 79, 79);
+    font: 11pt Verdana;
+
+    max-width: 800px;
+    min-width: 600px;
 }
 
 .item {
@@ -48,7 +74,7 @@ ul {
 }
 
 li:hover {
-    background-color: aliceblue;
+    background-color: rgb(177, 237, 255);
 }
 
 .a-return {

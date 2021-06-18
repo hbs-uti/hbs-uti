@@ -1,6 +1,8 @@
 body {
+    font: 11pt Verdana;
     background-color: rgb(29, 110, 202);
     background: linear-gradient(131.03deg, rgb(29, 110, 202) 2.54%, #7be9ff 77.08%);
+    
 }
 
 header {
@@ -9,25 +11,29 @@ header {
     text-align: center;
     color: white;
     padding: 8px;
+    font-weight: bold;
 }
 
 div.item {
     font: 11pt Verdana;
-    background-color: rgb(187, 226, 223);
-    margin: 10px;
-    padding: 5px 10px ;
+    background-color: rgb(255, 255, 255);
+    margin: 8px;
+    padding: 10px 10px;
+    border: 8px;
     border-radius: 8px;
     text-align: justify;
-    box-shadow: 2px 2px 2px rgb(105, 105, 105);
-       
-
+    box-shadow: 2px 2px 2px rgb(80, 79, 79);
+    justify-content: space-around;
+    max-width: 800px;
+    min-width: 600px;
 }
 
 .item:hover {
-    background-color: aliceblue;
+    background-color: rgb(177, 237, 255);
 }
 
 .item-head {
     text-decoration: underline;
     font-weight: bold;
 }
+

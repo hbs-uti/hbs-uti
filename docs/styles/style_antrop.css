@@ -1,16 +1,32 @@
 body {
-    font: 11pt Verdana;
+    font: 12pt Verdana;
     background-color: rgb(29, 110, 202);
     background: linear-gradient(131.03deg, rgb(29, 110, 202) 2.54%, #7be9ff 77.08%);
+    text-align: center;
+    align-items: center;
 }
 
 header {
-    color: white;
-    font: 18pt Verdana;
-    font-weight: bold;
-    text-align: center;
+    font: 16pt Verdana;
     text-decoration: underline;
+    text-align: center;
+    color: white;
     padding: 8px;
+    font-weight: bold;
+}
+
+section#dados {
+    background-color: rgb(255, 255, 255);
+    padding: 10px 10px;
+    margin: 8px;
+    border: 8px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px rgb(80, 79, 79);
+    font: 11pt Verdana;
+
+    max-width: 800px;
+    min-width: 600px;
+
 }
 
 p#p1 {
@@ -18,23 +34,20 @@ p#p1 {
     font-weight: bold;
 }
 
-section#dados {
-    background-color: aliceblue;
-    padding: 10px 16px 10px;
-    justify-content: center;
-    border-radius: 8px;
-    margin: 10px;
-    width: fit-content;
-}
 
 input#box-altura {
     max-width: 100px;
-    border-style: dashed;
+    padding: 8px;
+    text-align: center;
+    border-style: dotted;
 }
 
 input#box-peso {
     max-width: 100px;
-    border-style: dashed;
+    padding: 8px;
+    text-align: center;
+    border-style: dotted;
+
 }
 
 input#btnCalc {
@@ -53,12 +66,17 @@ input#btncopy {
 }
 
 section#box-evol {
-    background-color: aliceblue;
-    padding: 10px 16px 10px;
-    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 10px;
+    margin: 8px;
+    border: 8px;
     border-radius: 8px;
-    margin: 10px;
-    max-width: fit-content;
+    box-shadow: 2px 2px 2px rgb(80, 79, 79);
+    font: 11pt Verdana;
+    text-align: justify;
+    justify-content: space-around;
+    max-width: 800px;
+    min-width: 600px;
 }
 
 footer {

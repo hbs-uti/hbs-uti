@@ -1,4 +1,3 @@
-
 function calcular() {
        
     var altura = document.getElementById('box-altura');
@@ -28,7 +27,24 @@ function calcular() {
     var evol = document.getElementById('evolp2');
     evol.innerHTML = `Peso real: ${weight} kg || Altura: ${height} cm || Peso ideal VM: ${weightIdeal} kg || Volume corrente (4 - 6 mL/kg): ${vm4Ideal} - ${vm6Ideal} mL`;
 
-        
-  
-  
 }
+
+/*
+    Função para copiar uma div ou parágrafo.
+    Ainda ocupa linhas de código demais.
+    Aos poucos, aprender a substituir esses excessos com as bibliotecas.
+
+*/
+
+function copiar() {
+    var evol = document.createRange();
+    evol.selectNode(document.getElementById("evolp2"));
+    window.getSelection().removeAllRanges();
+    window.getSelection().addRange(evol);
+    document.execCommand('copy');
+    window.getSelection().removeAllRanges();
+    
+}
+
+    document.getElementById('btncopy').addEventListener("click", copiar);
+

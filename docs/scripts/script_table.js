@@ -24,3 +24,16 @@ function calcPropo() {
     var dosePropo = (propo*10)/peso;
     this.resPropo.innerHTML = dosePropo.toFixed(2);
 }
+
+function copiar() {
+    var evol = document.createRange();
+    evol.selectNode(document.getElementById('p-res'));
+    window.getSelection().removeAllRanges();
+    window.getSelection().addRange(evol);
+    document.execCommand('copy');
+    window.getSelection().removeAllRanges();
+    
+}
+
+    document.getElementById('btn-copiar').addEventListener("click", copiar);
+
